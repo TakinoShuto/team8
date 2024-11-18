@@ -23,7 +23,7 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
-simulation.speed=50
+simulation.speed=52
 target1.height=50
 target1.name=A
 target1.showInterface=false
@@ -62,10 +62,5 @@ target5.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
-<<<<<<< HEAD
 xPosition=1001
 yPosition=371
-=======
-xPosition=490
-yPosition=240
->>>>>>> 1334721dbf52b8c45442309cf9665cf058294d10
