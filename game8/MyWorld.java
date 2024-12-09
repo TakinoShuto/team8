@@ -10,9 +10,13 @@ public class MyWorld extends World
         // 背景画像を設定
         GreenfootImage backgroundImage = new GreenfootImage("background.png");  // 背景画像を読み込む
         backgroundImage.scale(getWidth(), getHeight());  // 画面サイズにリサイズ
+        backgroundImage.setTransparency(255);
         setBackground(backgroundImage);  // リサイズされた画像を背景として設定
 
         A a = new A();// 生徒アクターを世界に追加
-        addObject(a,300,100);
+        addObject(a,300,350);
+        
+        k k = new k();// 生徒アクターを世界に追加
+        addObject(k,300,360);
     }
 }

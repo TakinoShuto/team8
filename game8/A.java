@@ -8,12 +8,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class A extends Actor
 {
+    public A()
+    {
+        getImage().scale( 100, 100 );
+    }
+    
     /**
      * Act - do whatever the A wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
-    {
+    {  
         int x = getX();
         int y = getY();
 
@@ -24,10 +29,11 @@ public class A extends Actor
 
         if( Greenfoot.isKeyDown( "right" ) ){
         setLocation(x+5,y);
-        }   // Add your action code here
+        }   
 
-
-        
+        if( Greenfoot.isKeyDown( "space" ) ){
+            getWorld().addObject( new k(), getX(), getY() );
+        }
 }
    
 }
