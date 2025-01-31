@@ -10,7 +10,8 @@ public class k extends Actor
 {
     private int speed = 3;
     
-    private boolean flag_k = false;
+    private int flag_k = 0;
+    
     
     /**
      * Act - do whatever the k wants to do. This method is called whenever
@@ -26,13 +27,13 @@ public class k extends Actor
         setLocation(getX(), getY() - speed);
         
         if( Greenfoot.isKeyDown( "space" ) ){
-            if( flag_k == false ){
-                getWorld().addObject( new k(), getX(), getY() );
-                flag_k = true;
+            if( flag_k == 0 ){
+                getWorld().addObject( new k (), getX(), getY() );
+                flag_k = flag_k+1;
             }
         }  
-        else flag_k = false;
-        
+        else flag_k = 0;
+        getWorld().showText(""+flag_k,200,200);
         // 画面外に出たら削除
         if (getY() <= 0) {
             getWorld().removeObject(this);
